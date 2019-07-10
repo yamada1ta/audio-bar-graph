@@ -64,7 +64,7 @@ function initGraph() {
     const bar = barBase.cloneNode();
     bar.setAttribute('width', barRange * data[i][1] / largeScale);
     bar.setAttribute('y', barBaseY + 40 * i);
-    if (i < barColor.length - 1) {
+    if (i < barColor.length) {
       bar.setAttribute('fill', barColor[i])
     }
     barRoot.appendChild(bar);
